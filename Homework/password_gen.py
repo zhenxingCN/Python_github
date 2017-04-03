@@ -4,20 +4,19 @@ import random
 
 def generate_complex_password():
     sp = string.ascii_letters + string.digits + string.punctuation
-    res = ''.join(random.sample(sp, 12))
+    res = ''.join(random.sample(sp, 10))
     return res
 
 
 def generate_normal_password():
     sp = string.ascii_letters + string.digits
-    res = ''.join(random.sample(sp, 12))
+    res = ''.join(random.sample(sp, 8))
     return res
-
 
 
 def generate_simple_password():
     sp = string.ascii_letters
-    res = ''.join(random.sample(sp, 12))
+    res = ''.join(random.sample(sp,6))
     return res
 
 
